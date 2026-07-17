@@ -6,12 +6,16 @@ bool linear_search_algorithm(int numbers[], int target, int length);
 int main(void) {
 
     int numbers[] = {34, 5, 78, 90, 56};
-    int target = 78;
+    int target = 9999;
     int length = 5;
 
-   if( linear_search_algorithm(numbers, target, length)) {
-    printf("We successfully found the, %i\n", target );
+   if(linear_search_algorithm(numbers, target, length)) {
+        printf("We successfully found the, %i\n", target );
+        return 0;
    }
+
+   printf("Not found\n");
+   return 1;
 
 }
 
